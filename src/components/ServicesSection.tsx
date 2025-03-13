@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronRight, Cross, Users, Flag } from "lucide-react";
+import { ChevronRight, Cross, Users, Flag, Home } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
@@ -13,16 +13,16 @@ const ServicesSection = () => {
       link: "/servizi/funebri"
     },
     {
+      title: "Casa del Commiato",
+      description: "Un luogo sereno e accogliente dove riunirsi per dare l'ultimo saluto ai propri cari in un ambiente confortevole e rispettoso.",
+      icon: <Home className="h-10 w-10 mb-4 text-gray-700" />,
+      link: "/casa-del-commiato"
+    },
+    {
       title: "Consulenza per il Lutto",
       description: "Supporto psicologico professionale e guida durante il periodo di lutto per aiutarvi ad affrontare questo momento difficile.",
       icon: <Users className="h-10 w-10 mb-4 text-gray-700" />,
       link: "/servizi/consulenza"
-    },
-    {
-      title: "Cerimonie Commemorative",
-      description: "Organizziamo cerimonie personalizzate per commemorare la vita del vostro caro in modo significativo e rispettoso.",
-      icon: <Flag className="h-10 w-10 mb-4 text-gray-700" />,
-      link: "/servizi/commemorazioni"
     }
   ];
 
