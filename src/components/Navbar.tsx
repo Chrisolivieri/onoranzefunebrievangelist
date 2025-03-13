@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -12,8 +11,8 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "Chi Siamo", href: "/chi-siamo" },
     { name: "Servizi", href: "/servizi" },
-    { name: "Necrologi", href: "/necrologi" },
     { name: "Contatti", href: "/contatti" },
+    { name: "Casa del Commiato", href: "/casa-del-commiato" },
   ];
 
   return (
