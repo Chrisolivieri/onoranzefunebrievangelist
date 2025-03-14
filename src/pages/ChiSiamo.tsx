@@ -23,7 +23,7 @@ const ChiSiamo = () => {
             <div className="max-w-4xl mx-auto">
               <div className="prose prose-lg mx-auto">
                 <p>
-                  Onoranze Funebri Serenità nasce nel 1985 con l'obiettivo di offrire un servizio funebre completo, 
+                  Onoranze Funebri Evangelisti nasce nel 1985 a Castelraimondo con l'obiettivo di offrire un servizio funebre completo, 
                   caratterizzato da professionalità, discrezione e rispetto per il dolore delle famiglie in lutto.
                 </p>
                 
@@ -54,13 +54,13 @@ const ChiSiamo = () => {
                 </p>
 
                 <p>
-                  La nostra sede principale si trova a Milano, ma operiamo in tutta la Lombardia per essere 
+                  La nostra sede principale si trova a Castelraimondo, ma operiamo in tutta la provincia di Macerata per essere 
                   vicini alle famiglie ovunque si trovino.
                 </p>
 
                 <h3 className="font-serif mt-8">La Nostra Storia</h3>
                 <p>
-                  Fondati dalla famiglia Bianchi nel 1985, abbiamo mantenuto nel tempo i valori di un'azienda familiare 
+                  Fondati dalla famiglia Evangelisti nel 1985, abbiamo mantenuto nel tempo i valori di un'azienda familiare 
                   combinandoli con un servizio di elevata professionalità. In oltre tre decenni abbiamo evoluto i 
                   nostri servizi per rispondere alle esigenze di una società in cambiamento, mantenendo sempre al 
                   centro il rispetto e la dignità delle persone.

@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -20,8 +21,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center">
-              <span className="text-xl font-serif font-bold text-gray-900">Onoranze Funebri Serenità</span>
+            <Link to="/" className="flex items-center gap-3">
+              <img 
+                src="/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png" 
+                alt="Onoranze Funebri Evangelisti Logo" 
+                className="h-12 w-auto"
+              />
+              <span className="text-xl font-serif font-bold text-gray-900 hidden md:block">Onoranze Funebri Evangelisti</span>
             </Link>
           </div>
 
@@ -58,7 +64,14 @@ const Navbar = () => {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between mb-8">
-                  <span className="text-lg font-serif font-bold">Menu</span>
+                  <div className="flex items-center gap-2">
+                    <img 
+                      src="/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png" 
+                      alt="Evangelisti Logo" 
+                      className="h-8 w-auto"
+                    />
+                    <span className="text-lg font-serif font-bold">Menu</span>
+                  </div>
                   <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
                     <X className="h-5 w-5" />
                   </Button>

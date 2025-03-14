@@ -8,7 +8,14 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-serif font-semibold text-white mb-4">Onoranze Funebri Serenità</h3>
+            <div className="flex items-center mb-4">
+              <img 
+                src="/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png" 
+                alt="Evangelisti Logo" 
+                className="h-12 w-auto mr-3"
+              />
+              <h3 className="text-xl font-serif font-semibold text-white">Onoranze Funebri Evangelisti</h3>
+            </div>
             <p className="mb-4 text-gray-400">
               Offriamo servizi funebri completi con dignità e rispetto, accompagnando le famiglie in ogni fase del lutto.
             </p>
@@ -33,7 +40,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 mt-1 text-gray-400" />
-                <span>Via Roma 123, Milano, 20121, Italia</span>
+                <span>Via Nazionale 43, Castelraimondo (MC), 62022, Italia</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-gray-400" />
@@ -41,7 +48,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-gray-400" />
-                <span>info@serenitafunebri.it</span>
+                <span>info@evangelistifunebri.it</span>
               </li>
               <li className="flex items-start">
                 <Clock className="h-5 w-5 mr-3 mt-1 text-gray-400" />
@@ -60,7 +67,7 @@ const Footer = () => {
                 <Link to="/servizi" className="text-gray-400 hover:text-white">I Nostri Servizi</Link>
               </li>
               <li>
-                <Link to="/necrologi" className="text-gray-400 hover:text-white">Necrologi</Link>
+                <Link to="/casa-del-commiato" className="text-gray-400 hover:text-white">Casa del Commiato</Link>
               </li>
               <li>
                 <Link to="/guida-servizi" className="text-gray-400 hover:text-white">Guida ai Servizi</Link>
@@ -98,7 +105,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-12 pt-8">
           <p className="text-center text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} Onoranze Funebri Serenità. Tutti i diritti riservati.
+            &copy; {new Date().getFullYear()} Onoranze Funebri Evangelisti. Tutti i diritti riservati.
           </p>
         </div>
       </div>

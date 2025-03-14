@@ -19,7 +19,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
-            Onoranze Funebri Serenità
+            Onoranze Funebri Evangelisti
           </h1>
           <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">
             Accompagniamo i vostri cari con dignità e rispetto in ogni momento del loro ultimo viaggio
@@ -84,7 +84,7 @@ const Index = () => {
                 <MapPin className="h-10 w-10 mb-4 text-gray-700 mx-auto" />
                 <h3 className="text-xl font-medium text-center mb-2">Presenza Locale</h3>
                 <p className="text-gray-600 text-center">
-                  Profonda conoscenza del territorio e delle tradizioni locali.
+                  Profonda conoscenza del territorio e delle tradizioni locali di Castelraimondo.
                 </p>
               </CardContent>
             </Card>
