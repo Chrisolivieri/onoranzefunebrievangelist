@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center mb-4">
               <img 
@@ -70,34 +70,7 @@ const Footer = () => {
                 <Link to="/casa-del-commiato" className="text-gray-400 hover:text-white">Casa del Commiato</Link>
               </li>
               <li>
-                <Link to="/guida-servizi" className="text-gray-400 hover:text-white">Guida ai Servizi</Link>
-              </li>
-              <li>
-                <Link to="/faq" className="text-gray-400 hover:text-white">Domande Frequenti</Link>
-              </li>
-              <li>
                 <Link to="/contatti" className="text-gray-400 hover:text-white">Contattaci</Link>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Orari</h3>
-            <ul className="space-y-2">
-              <li className="flex justify-between">
-                <span className="text-gray-400">Lunedì - Venerdì:</span>
-                <span>08:00 - 20:00</span>
-              </li>
-              <li className="flex justify-between">
-                <span className="text-gray-400">Sabato:</span>
-                <span>09:00 - 18:00</span>
-              </li>
-              <li className="flex justify-between">
-                <span className="text-gray-400">Domenica:</span>
-                <span>10:00 - 16:00</span>
-              </li>
-              <li className="mt-4 pt-2 border-t border-gray-700">
-                <span className="text-gray-300">Servizio di emergenza disponibile 24/7</span>
               </li>
             </ul>
           </div>
