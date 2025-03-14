@@ -25,7 +25,7 @@ const Navbar = () => {
               <img 
                 src="/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png" 
                 alt="Onoranze Funebri Evangelisti Logo" 
-                className="h-12 w-auto"
+                className="h-16 md:h-24 w-auto"
               />
               <span className="text-xl font-serif font-bold text-gray-900 hidden md:block">Onoranze Funebri Evangelisti</span>
             </Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
                     <img 
                       src="/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png" 
                       alt="Evangelisti Logo" 
-                      className="h-8 w-auto"
+                      className="h-12 w-auto"
                     />
                     <span className="text-lg font-serif font-bold">Menu</span>
                   </div>

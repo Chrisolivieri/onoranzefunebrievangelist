@@ -12,7 +12,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png" 
                 alt="Evangelisti Logo" 
-                className="h-12 w-auto mr-3"
+                className="h-16 w-auto mr-3"
               />
               <h3 className="text-xl font-serif font-semibold text-white">Onoranze Funebri Evangelisti</h3>
             </div>
