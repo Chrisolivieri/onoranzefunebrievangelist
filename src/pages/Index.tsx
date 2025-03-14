@@ -6,8 +6,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ChevronRight, Phone, Clock, MapPin, Users, Heart } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ServicesSection from "@/components/ServicesSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
 
 const Index = () => {
   return (
@@ -101,12 +99,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Services Section */}
-      <ServicesSection />
-
-      {/* Testimonials */}
-      <TestimonialsSection />
 
       {/* Contact CTA */}
       <section className="py-16 bg-gray-100">
