@@ -9,7 +9,9 @@ import Footer from "@/components/Footer";
 import { 
   Carousel, 
   CarouselContent, 
-  CarouselItem 
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext
 } from "@/components/ui/carousel";
 
 const Index = () => {
@@ -20,24 +22,50 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative w-full h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Carousel opts={{ loop: true, duration: 60, watchDrag: false }} className="w-full h-full" autoplay interval={5000}>
+          <Carousel 
+            className="w-full h-full"
+            autoplay 
+            interval={5000}
+            opts={{ 
+              loop: true, 
+              duration: 60, 
+              watchDrag: false 
+            }}
+          >
             <CarouselContent className="h-full">
               <CarouselItem className="h-full">
-                <div className="relative w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png')" }}>
+                <div 
+                  className="relative w-full h-full bg-cover bg-center" 
+                  style={{ 
+                    backgroundImage: "url('/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png')"
+                  }}
+                >
                   <div className="absolute inset-0 bg-black/50"></div>
                 </div>
               </CarouselItem>
               <CarouselItem className="h-full">
-                <div className="relative w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80')" }}>
+                <div 
+                  className="relative w-full h-full bg-cover bg-center" 
+                  style={{ 
+                    backgroundImage: "url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80')" 
+                  }}
+                >
                   <div className="absolute inset-0 bg-black/50"></div>
                 </div>
               </CarouselItem>
               <CarouselItem className="h-full">
-                <div className="relative w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=1400&q=80')" }}>
+                <div 
+                  className="relative w-full h-full bg-cover bg-center" 
+                  style={{ 
+                    backgroundImage: "url('https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=1400&q=80')" 
+                  }}
+                >
                   <div className="absolute inset-0 bg-black/50"></div>
                 </div>
               </CarouselItem>
             </CarouselContent>
+            <CarouselPrevious className="left-4 z-20" />
+            <CarouselNext className="right-4 z-20" />
           </Carousel>
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
