@@ -94,11 +94,11 @@ const Index = () => {
               <Phone className="mr-3 h-6 w-6" />
               <div>
                 <p className="text-sm text-gray-300">Assistenza 24/7</p>
-                <p className="text-xl font-bold">800-123-456</p>
+                <p className="text-xl font-bold">338 362 2055</p>
               </div>
             </div>
             <Button className="bg-white text-gray-800 hover:bg-gray-200">
-              <Link to="/contatti">Richiedi Informazioni</Link>
+              <a href="tel:+393383622055">Chiama Ora</a>
             </Button>
           </div>
         </div>
