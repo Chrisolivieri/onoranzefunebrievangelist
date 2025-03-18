@@ -27,10 +27,9 @@ const Navbar = () => {
                 alt="Onoranze Funebri Evangelisti Logo" 
                 className="h-16 md:h-24 w-auto"
               />
-              <div className="flex flex-col">
-                <span className="text-xl font-serif font-bold text-gray-900 block">Onoranze Funebri</span>
-                <span className="text-xl font-serif font-bold text-gray-900 block">Evangelisti</span>
-              </div>
+              <span className="text-xl font-serif font-bold text-gray-900 block">
+                Onoranze Funebri Evangelisti
+              </span>
             </Link>
           </div>
 
