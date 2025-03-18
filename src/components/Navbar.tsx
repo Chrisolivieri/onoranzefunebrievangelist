@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Phone, X } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,9 +72,7 @@ const Navbar = () => {
                     />
                     <span className="text-lg font-serif font-bold">Menu</span>
                   </div>
-                  <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
-                    <X className="h-5 w-5" />
-                  </Button>
+                  {/* Removed the duplicate X button here */}
                 </div>
                 <nav className="flex flex-col gap-4">
                   {links.map((link) => (
