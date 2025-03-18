@@ -47,7 +47,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-4">
             <div className="flex items-center">
               <Phone className="h-4 w-4 mr-2 text-gray-600" />
-              <span className="text-sm font-medium">800-123-456</span>
+              <span className="text-sm font-medium">338 362 2055</span>
             </div>
             <Button size="sm" className="bg-gray-800 hover:bg-gray-700">
               <Link to="/contatti">Assistenza</Link>
@@ -61,8 +61,8 @@ const Navbar = () => {
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-              <div className="flex flex-col h-full">
+            <SheetContent side="right" className="w-[300px] sm:w-[400px] p-0">
+              <div className="flex flex-col h-full p-6">
                 <div className="flex items-center justify-between mb-8">
                   <div className="flex items-center gap-2">
                     <img 
@@ -93,11 +93,11 @@ const Navbar = () => {
                     <Phone className="h-5 w-5 mr-3 text-gray-600" />
                     <div>
                       <p className="text-sm text-gray-500">Assistenza 24/7</p>
-                      <p className="text-base font-bold">800-123-456</p>
+                      <p className="text-base font-bold">338 362 2055</p>
                     </div>
                   </div>
                   <Button className="w-full bg-gray-800 hover:bg-gray-700">
-                    <Link to="/contatti">Contattaci</Link>
+                    <a href="tel:+393383622055">Chiama Ora</a>
                   </Button>
                 </div>
               </div>
