@@ -23,17 +23,15 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center gap-3">
+            <Link to="/" className="flex items-center gap-2">
               <img 
                 src="/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png" 
                 alt="Onoranze Funebri Evangelisti Logo" 
-                className="h-16 md:h-24 w-auto"
+                className="h-12 w-auto"
               />
-              {!isMobile && (
-                <span className="text-xl font-serif font-bold text-gray-900 block">
-                  Onoranze Funebri Evangelisti
-                </span>
-              )}
+              <span className="text-base md:text-xl font-serif font-bold text-gray-900 truncate max-w-[180px] md:max-w-none">
+                Onoranze Funebri Evangelisti
+              </span>
             </Link>
           </div>
 
@@ -61,12 +59,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Navigation */}
-          <div className="flex items-center gap-2 md:hidden">
-            {isMobile && (
-              <span className="text-lg font-serif font-bold text-gray-900 block truncate">
-                Onoranze Funebri Evangelisti
-              </span>
-            )}
+          <div className="flex items-center md:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
