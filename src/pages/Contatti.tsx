@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Contatti = () => {
   return (
@@ -29,8 +30,8 @@ const Contatti = () => {
                 <h2 className="text-2xl font-serif font-semibold mb-6 text-center">Informazioni di Contatto</h2>
                 
                 <div className="space-y-8 mt-8">
-                  <div className="flex items-start justify-center">
-                    <MapPin className="h-6 w-6 mr-4 mt-1 text-gray-700" />
+                  <div className="flex items-start">
+                    <MapPin className="h-6 w-6 mr-4 mt-1 text-gray-700 flex-shrink-0" />
                     <div>
                       <h3 className="font-medium text-lg mb-1">Indirizzo</h3>
                       <p className="text-gray-600"><strong>Sede legale:</strong> Viale Europa, 30</p>
@@ -41,8 +42,8 @@ const Contatti = () => {
                     </div>
                   </div>
                   
-                  <div className="flex items-start justify-center">
-                    <Phone className="h-6 w-6 mr-4 mt-1 text-gray-700" />
+                  <div className="flex items-start">
+                    <Phone className="h-6 w-6 mr-4 mt-1 text-gray-700 flex-shrink-0" />
                     <div>
                       <h3 className="font-medium text-lg mb-1">Telefono</h3>
                       <p className="text-gray-600">338 362 2055</p>
@@ -50,16 +51,16 @@ const Contatti = () => {
                     </div>
                   </div>
                   
-                  <div className="flex items-start justify-center">
-                    <Mail className="h-6 w-6 mr-4 mt-1 text-gray-700" />
+                  <div className="flex items-start">
+                    <Mail className="h-6 w-6 mr-4 mt-1 text-gray-700 flex-shrink-0" />
                     <div>
                       <h3 className="font-medium text-lg mb-1">Email</h3>
                       <p className="text-gray-600">onoranze.evangelisti@gmail.com</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-start justify-center">
-                    <Clock className="h-6 w-6 mr-4 mt-1 text-gray-700" />
+                  <div className="flex items-start">
+                    <Clock className="h-6 w-6 mr-4 mt-1 text-gray-700 flex-shrink-0" />
                     <div>
                       <h3 className="font-medium text-lg mb-1">Orari</h3>
                       <p className="text-gray-600">Lunedì - Venerdì: 08:00 - 20:00</p>
@@ -75,9 +76,17 @@ const Contatti = () => {
                   <p className="text-gray-600 mb-4">
                     In caso di necessità immediate, vi invitiamo a chiamare il nostro numero di emergenza disponibile 24/7.
                   </p>
-                  <div className="flex items-center justify-center">
-                    <Phone className="h-5 w-5 mr-3 text-gray-700" />
-                    <span className="text-xl font-medium">346 5114548</span>
+                  <div className="flex flex-col items-center justify-center space-y-4">
+                    <div className="flex items-center">
+                      <Phone className="h-5 w-5 mr-3 text-gray-700" />
+                      <span className="text-xl font-medium">346 5114548</span>
+                    </div>
+                    <Button className="bg-gray-800 hover:bg-gray-700">
+                      <a href="tel:+393465114548" className="flex items-center">
+                        <Phone className="h-5 w-5 mr-2" />
+                        Chiama Ora
+                      </a>
+                    </Button>
                   </div>
                 </div>
               </div>
