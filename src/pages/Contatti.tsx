@@ -45,8 +45,8 @@ const Contatti = () => {
                     <Phone className="h-6 w-6 mr-4 mt-1 text-gray-700" />
                     <div>
                       <h3 className="font-medium text-lg mb-1">Telefono</h3>
-                      <p className="text-gray-600">Numero Verde: 800-123-456</p>
-                      <p className="text-gray-600">Ufficio: +39 02 1234567</p>
+                      <p className="text-gray-600">338 362 2055</p>
+                      <p className="text-gray-600">346 5114548</p>
                     </div>
                   </div>
                   
@@ -54,8 +54,7 @@ const Contatti = () => {
                     <Mail className="h-6 w-6 mr-4 mt-1 text-gray-700" />
                     <div>
                       <h3 className="font-medium text-lg mb-1">Email</h3>
-                      <p className="text-gray-600">info@evangelistifunebri.it</p>
-                      <p className="text-gray-600">assistenza@evangelistifunebri.it</p>
+                      <p className="text-gray-600">onoranze.evangelisti@gmail.com</p>
                     </div>
                   </div>
                   
@@ -78,7 +77,7 @@ const Contatti = () => {
                   </p>
                   <div className="flex items-center justify-center">
                     <Phone className="h-5 w-5 mr-3 text-gray-700" />
-                    <span className="text-xl font-medium">800-123-456</span>
+                    <span className="text-xl font-medium">346 5114548</span>
                   </div>
                 </div>
               </div>
