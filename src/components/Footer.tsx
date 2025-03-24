@@ -40,7 +40,10 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 mt-1 text-gray-400" />
-                <span>Via Nazionale 43, Castelraimondo (MC), 62022, Italia</span>
+                <div>
+                  <span>Sede legale: Viale Europa, 30, 62022 Castelraimondo (MC)</span><br />
+                  <span>Sala del Commiato: Località Piani di Lanciano, 7, 62025 Pioraco (MC)</span>
+                </div>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-gray-400" />

@@ -33,9 +33,11 @@ const Contatti = () => {
                     <MapPin className="h-6 w-6 mr-4 mt-1 text-gray-700" />
                     <div>
                       <h3 className="font-medium text-lg mb-1">Indirizzo</h3>
-                      <p className="text-gray-600">Via Nazionale 43</p>
-                      <p className="text-gray-600">Castelraimondo (MC), 62022</p>
-                      <p className="text-gray-600">Italia</p>
+                      <p className="text-gray-600"><strong>Sede legale:</strong> Viale Europa, 30</p>
+                      <p className="text-gray-600">62022 Castelraimondo (MC)</p>
+                      <p className="text-gray-600 mt-2"><strong>Sala del Commiato:</strong> Località Piani di Lanciano, 7</p>
+                      <p className="text-gray-600">62025 Pioraco (MC)</p>
+                      <p className="text-gray-600 mt-2">Italia</p>
                     </div>
                   </div>
                   
