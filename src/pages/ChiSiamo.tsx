@@ -14,7 +14,7 @@ const ChiSiamo = () => {
             <div className="max-w-3xl mx-auto">
               <h1 className="text-3xl md:text-4xl font-serif font-semibold mb-6 text-center">Chi Siamo</h1>
               <p className="text-gray-600 mb-8 text-center">
-                Da oltre 30 anni al servizio delle famiglie con dignità e rispetto
+                Da oltre 40 anni al servizio delle famiglie con dignità e rispetto
               </p>
             </div>
           </div>
@@ -25,7 +25,7 @@ const ChiSiamo = () => {
             <div className="max-w-4xl mx-auto">
               <div className="prose prose-lg mx-auto">
                 <p>
-                  Onoranze Funebri Evangelisti nasce nel 1985 a Castelraimondo con l'obiettivo di offrire un servizio funebre completo, 
+                  Onoranze Funebri Evangelisti nasce negli anni '70 a Castelraimondo con l'obiettivo di offrire un servizio funebre completo, 
                   caratterizzato da professionalità, discrezione e rispetto per il dolore delle famiglie in lutto.
                 </p>
                 

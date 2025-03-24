@@ -9,9 +9,7 @@ import Footer from "@/components/Footer";
 import { 
   Carousel, 
   CarouselContent, 
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext
+  CarouselItem
 } from "@/components/ui/carousel";
 
 const Index = () => {
@@ -64,8 +62,6 @@ const Index = () => {
                 </div>
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="left-4 z-20" />
-            <CarouselNext className="right-4 z-20" />
           </Carousel>
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
@@ -158,7 +154,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-serif font-semibold mb-6">Siamo Qui Per Aiutarti</h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            Contattaci in qualsiasi momento per qualsiasi necessità. Il nostro team è pronto ad assisterti con professionalità e con passione.
+            Contattaci in qualsiasi momento per qualsiasi necessità. Luca e Andrea sono pronti ad assistervi con professionalità e con passione.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="bg-gray-800 hover:bg-gray-700">
