@@ -17,7 +17,7 @@ const Footer = () => {
               <h3 className="text-xl font-serif font-semibold text-white">Onoranze Funebri Evangelisti</h3>
             </div>
             <p className="mb-4 text-gray-400">
-              Offriamo servizi funebri completi con dignità e rispetto, accompagnando le famiglie in ogni fase del lutto.
+              Offriamo servizi funebri completi con dignità e rispetto, accompagnando le famiglie in ogni fase del lutto con passione.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white">
@@ -44,7 +44,10 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-gray-400" />
-                <span>800-123-456</span>
+                <div>
+                  <span>338 362 2055</span><br />
+                  <span>346 5114548</span>
+                </div>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-gray-400" />

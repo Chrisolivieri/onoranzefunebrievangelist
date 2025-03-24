@@ -94,11 +94,11 @@ const Index = () => {
               <Phone className="mr-3 h-6 w-6" />
               <div>
                 <p className="text-sm text-gray-300">Assistenza 24/7</p>
-                <p className="text-xl font-bold">338 362 2055</p>
+                <p className="text-xl font-bold">338 362 2055 | 346 5114548</p>
               </div>
             </div>
             <Button className="bg-white text-gray-800 hover:bg-gray-200">
-              <a href="tel:+393383622055">Chiama Ora</a>
+              <a href="tel:+393465114548">Chiama Ora</a>
             </Button>
           </div>
         </div>
@@ -110,7 +110,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-serif font-semibold mb-4">Chi Siamo</h2>
             <p className="text-gray-600 mb-6">
-              Da oltre 30 anni, la nostra azienda a conduzione familiare offre servizi funebri completi con dignità, rispetto e compassione. Comprendiamo che ogni persona è unica, e ci impegniamo a personalizzare ogni servizio per onorare al meglio la memoria del vostro caro.
+              Da oltre 40 anni, la nostra azienda a conduzione familiare offre servizi funebri completi con dignità, rispetto e con passione. Comprendiamo che ogni persona è unica, e ci impegniamo a personalizzare ogni servizio per onorare al meglio la memoria del vostro caro.
             </p>
             <Button variant="outline" asChild className="border-gray-300">
               <Link to="/chi-siamo" className="flex items-center">
@@ -135,7 +135,7 @@ const Index = () => {
                 <MapPin className="h-10 w-10 mb-4 text-gray-700 mx-auto" />
                 <h3 className="text-xl font-medium text-center mb-2">Presenza Locale</h3>
                 <p className="text-gray-600 text-center">
-                  Profonda conoscenza del territorio e delle tradizioni locali di Castelraimondo.
+                  Profonda conoscenza del territorio e delle tradizioni locali di Castelraimondo e paesi limitrofi.
                 </p>
               </CardContent>
             </Card>
@@ -158,7 +158,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-serif font-semibold mb-6">Siamo Qui Per Aiutarti</h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            Contattaci in qualsiasi momento per qualsiasi necessità. Il nostro team è pronto ad assisterti con compassione e professionalità.
+            Contattaci in qualsiasi momento per qualsiasi necessità. Il nostro team è pronto ad assisterti con professionalità e con passione.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="bg-gray-800 hover:bg-gray-700">
