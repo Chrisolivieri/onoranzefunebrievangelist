@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -6,63 +5,26 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ChevronRight, Phone, Clock, MapPin, Users, Heart } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { 
-  Carousel, 
-  CarouselContent, 
-  CarouselItem
-} from "@/components/ui/carousel";
 
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
       
-      {/* Hero Section */}
+      {/* Hero Section with YouTube Video */}
       <section className="relative w-full h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Carousel 
-            className="w-full h-full"
-            autoplay 
-            interval={5000}
-            opts={{ 
-              loop: true, 
-              duration: 60, 
-              watchDrag: false 
-            }}
-          >
-            <CarouselContent className="h-full">
-              <CarouselItem className="h-full">
-                <div 
-                  className="relative w-full h-full bg-cover bg-center" 
-                  style={{ 
-                    backgroundImage: "url('/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png')"
-                  }}
-                >
-                  <div className="absolute inset-0 bg-black/50"></div>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="h-full">
-                <div 
-                  className="relative w-full h-full bg-cover bg-center" 
-                  style={{ 
-                    backgroundImage: "url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80')" 
-                  }}
-                >
-                  <div className="absolute inset-0 bg-black/50"></div>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="h-full">
-                <div 
-                  className="relative w-full h-full bg-cover bg-center" 
-                  style={{ 
-                    backgroundImage: "url('https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=1400&q=80')" 
-                  }}
-                >
-                  <div className="absolute inset-0 bg-black/50"></div>
-                </div>
-              </CarouselItem>
-            </CarouselContent>
-          </Carousel>
+          <div className="w-full h-full relative">
+            <iframe 
+              src="https://www.youtube.com/embed/Vql6Qb03_70?autoplay=1&mute=1&loop=1&playlist=Vql6Qb03_70&controls=0&rel=0" 
+              title="Onoranze Funebri Evangelisti" 
+              className="w-full h-full object-cover"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <div className="absolute inset-0 bg-black/50"></div>
+          </div>
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
