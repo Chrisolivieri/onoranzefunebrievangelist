@@ -18,10 +18,11 @@ const Index = () => {
             <iframe 
               src="https://www.youtube.com/embed/Vql6Qb03_70?autoplay=1&mute=1&loop=1&playlist=Vql6Qb03_70&controls=0&rel=0" 
               title="Onoranze Funebri Evangelisti" 
-              className="w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             ></iframe>
             <div className="absolute inset-0 bg-black/50"></div>
           </div>
