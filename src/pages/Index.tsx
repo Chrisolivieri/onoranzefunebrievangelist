@@ -17,13 +17,24 @@ const Index = () => {
         <div className="absolute inset-0 z-0">
           <div className="w-full h-full relative">
             <iframe 
-              src="https://www.youtube.com/embed/Vql6Qb03_70?autoplay=1&mute=1&loop=1&playlist=Vql6Qb03_70&controls=0&rel=0" 
+              src="https://www.youtube.com/embed/Vql6Qb03_70?autoplay=1&mute=1&loop=1&playlist=Vql6Qb03_70&controls=0&rel=0&showinfo=0&modestbranding=1" 
               title="Onoranze Funebri Evangelisti" 
               className="absolute inset-0 w-full h-full"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              style={{ 
+                objectFit: 'cover', 
+                width: '100%', 
+                height: '100%', 
+                pointerEvents: 'none',
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                minWidth: '100%',
+                minHeight: '100%'
+              }}
             ></iframe>
             <div className="absolute inset-0 bg-black/50"></div>
           </div>
