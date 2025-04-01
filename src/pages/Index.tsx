@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -21,7 +22,7 @@ const Index = () => {
             playsInline
             className="absolute w-full h-full object-cover"
           >
-            <source src="/mars-video-nasa.mp4" type="video/mp4" />
+            <source src="/mix.mp4" type="video/mp4" />
             Il tuo browser non supporta i video HTML5.
           </video>
           <div className="absolute inset-0 bg-black/50"></div>
