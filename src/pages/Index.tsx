@@ -6,14 +6,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ChevronRight, Phone, Clock, MapPin, Users, Heart } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
+  const isMobile = useIsMobile();
+  
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
       
       {/* Hero Section with Local Video */}
-      <section className="relative w-full h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <video
             autoPlay
@@ -21,24 +25,25 @@ const Index = () => {
             muted
             playsInline
             className="absolute w-full h-full object-cover"
+            style={{ objectPosition: isMobile ? "center" : "center" }}
           >
             <source src="/mix.mp4" type="video/mp4" />
             Il tuo browser non supporta i video HTML5.
           </video>
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-4 md:mb-6">
             Onoranze Funebri Evangelisti
           </h1>
-          <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-white mb-6 md:mb-8 max-w-3xl mx-auto">
             Accompagniamo i vostri cari con dignità e rispetto in ogni momento del loro ultimo viaggio
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button size="lg" asChild className="bg-gray-800 hover:bg-gray-700">
               <Link to="/servizi">I Nostri Servizi</Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="bg-white/10 border-white text-white hover:bg-white/20">
+            <Button size="lg" variant="outline" asChild className="bg-white/10 border-white text-white hover:bg-white/20 mt-3 sm:mt-0">
               <Link to="/contatti">Contattaci</Link>
             </Button>
           </div>
@@ -123,7 +128,7 @@ const Index = () => {
             <Button size="lg" asChild className="bg-gray-800 hover:bg-gray-700">
               <Link to="/contatti">Contattaci</Link>
             </Button>
-            <Button size="lg" variant="outline" asChild>
+            <Button size="lg" variant="outline" asChild className="mt-3 sm:mt-0">
               <Link to="/servizi">Esplora i Servizi</Link>
             </Button>
           </div>
