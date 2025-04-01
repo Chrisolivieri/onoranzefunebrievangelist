@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -12,32 +11,20 @@ const Index = () => {
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
       
-      {/* Hero Section with YouTube Video */}
+      {/* Hero Section with Local Video */}
       <section className="relative w-full h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full relative">
-            <iframe 
-              src="https://www.youtube.com/embed/Vql6Qb03_70?autoplay=1&mute=1&loop=1&playlist=Vql6Qb03_70&controls=0&rel=0&showinfo=0&modestbranding=1" 
-              title="Onoranze Funebri Evangelisti" 
-              className="absolute inset-0 w-full h-full"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              style={{ 
-                objectFit: 'cover', 
-                width: '100%', 
-                height: '100%', 
-                pointerEvents: 'none',
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
-                minWidth: '100%',
-                minHeight: '100%'
-              }}
-            ></iframe>
-            <div className="absolute inset-0 bg-black/50"></div>
-          </div>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute w-full h-full object-cover"
+          >
+            <source src="/mars-video-nasa.mp4" type="video/mp4" />
+            Il tuo browser non supporta i video HTML5.
+          </video>
+          <div className="absolute inset-0 bg-black/50"></div>
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
