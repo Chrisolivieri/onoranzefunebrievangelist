@@ -6,6 +6,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from "react-router-dom";
+import { Navigation, MapPin } from "lucide-react";
+import Map from "@/components/Map";
 
 const CasaDelCommiato = () => {
   return (
@@ -29,21 +31,16 @@ const CasaDelCommiato = () => {
             <div>
               <div className="aspect-w-16 aspect-h-9 mb-8 bg-gray-200 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1551038247-3d9af20df552?auto=format&fit=crop&w=1200&h=800" 
-                  alt="Esterno della Casa del Commiato" 
+                  src="/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png" 
+                  alt="Casa del Commiato Evangelisti" 
                   className="object-cover w-full h-full"
                 />
               </div>
               <p className="text-gray-600 mb-6">
-                La nostra Casa del Commiato è situata in una zona tranquilla e facilmente 
-                raggiungibile, circondata da un ampio giardino che offre uno spazio di 
-                riflessione e raccoglimento. La struttura è stata progettata con cura 
-                per offrire un ambiente confortevole e rispettoso.
-              </p>
-              <p className="text-gray-600">
-                Ogni dettaglio è stato pensato per creare un'atmosfera di serenità e 
-                dignità, dove le famiglie possono riunirsi per dare l'ultimo saluto 
-                ai propri cari in un contesto intimo e riservato.
+                La Casa del Commiato Evangelisti situata in Loc. Piani di Lanciano, 7 nel comune di Pioraco, è una 
+                struttura composta da 3 stanze per l'osservazione delle salme e da una cappellina per tributare 
+                l'ultimo saluto dei defunti anche di altre religioni. È a disposizione della propria clientela in modo 
+                totalmente gratuito, e con orari flessibili a seconda delle esigenze dei familiari dei defunti.
               </p>
             </div>
             
@@ -52,54 +49,49 @@ const CasaDelCommiato = () => {
               <Tabs defaultValue="sala-principale" className="mb-8">
                 <TabsList className="mb-4">
                   <TabsTrigger value="sala-principale">Sala Principale</TabsTrigger>
-                  <TabsTrigger value="sala-intima">Sala Intima</TabsTrigger>
-                  <TabsTrigger value="spazi-comuni">Spazi Comuni</TabsTrigger>
+                  <TabsTrigger value="sala-osservazione">Sale Osservazione</TabsTrigger>
+                  <TabsTrigger value="cappellina">Cappellina</TabsTrigger>
                 </TabsList>
                 <TabsContent value="sala-principale" className="space-y-4">
                   <div className="aspect-w-16 aspect-h-9 mb-4 bg-gray-200 rounded-lg overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?auto=format&fit=crop&w=1200&h=800" 
+                      src="/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png" 
                       alt="Sala principale della Casa del Commiato" 
                       className="object-cover w-full h-full"
                     />
                   </div>
                   <h3 className="text-xl font-medium">Sala Principale</h3>
                   <p className="text-gray-600">
-                    La sala principale può accogliere fino a 100 persone ed è dotata di 
-                    un sistema audio per le cerimonie, illuminazione soffusa regolabile 
-                    e un'eccellente acustica. Gli arredi sono eleganti e confortevoli, 
-                    creando un ambiente di rispetto e dignità.
+                    La sala principale è un ambiente spazioso e luminoso dove le famiglie possono 
+                    riunirsi per dare l'ultimo saluto ai propri cari, in un contesto di rispetto e dignità.
                   </p>
                 </TabsContent>
-                <TabsContent value="sala-intima" className="space-y-4">
+                <TabsContent value="sala-osservazione" className="space-y-4">
                   <div className="aspect-w-16 aspect-h-9 mb-4 bg-gray-200 rounded-lg overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=1200&h=800" 
-                      alt="Sala intima della Casa del Commiato" 
+                      src="/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png" 
+                      alt="Sale osservazione della Casa del Commiato" 
                       className="object-cover w-full h-full"
                     />
                   </div>
-                  <h3 className="text-xl font-medium">Sala Intima</h3>
+                  <h3 className="text-xl font-medium">Sale Osservazione</h3>
                   <p className="text-gray-600">
-                    Per chi desidera un ambiente più raccolto, la sala intima offre uno 
-                    spazio accogliente per piccoli gruppi fino a 30 persone. È l'ideale 
-                    per veglie più private e momenti di raccoglimento familiare.
+                    Le tre sale per l'osservazione delle salme offrono un ambiente intimo e confortevole 
+                    dove i familiari possono prendersi il tempo necessario per un ultimo momento di raccoglimento.
                   </p>
                 </TabsContent>
-                <TabsContent value="spazi-comuni" className="space-y-4">
+                <TabsContent value="cappellina" className="space-y-4">
                   <div className="aspect-w-16 aspect-h-9 mb-4 bg-gray-200 rounded-lg overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?auto=format&fit=crop&w=1200&h=800" 
-                      alt="Spazi comuni della Casa del Commiato" 
+                      src="/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png" 
+                      alt="Cappellina della Casa del Commiato" 
                       className="object-cover w-full h-full"
                     />
                   </div>
-                  <h3 className="text-xl font-medium">Spazi Comuni</h3>
+                  <h3 className="text-xl font-medium">Cappellina</h3>
                   <p className="text-gray-600">
-                    La struttura dispone di aree comuni dove i visitatori possono 
-                    ritrovarsi per un momento di pausa. Una piccola caffetteria offre 
-                    bevande e piccoli ristori. Il giardino esterno è accessibile per 
-                    chi desidera un momento di riflessione all'aria aperta.
+                    La cappellina è uno spazio dedicato per le cerimonie di commiato, accogliendo 
+                    funzioni religiose di ogni credo in un'atmosfera di rispetto e solennità.
                   </p>
                 </TabsContent>
               </Tabs>
@@ -109,12 +101,12 @@ const CasaDelCommiato = () => {
           {/* Services */}
           <div className="mt-16">
             <h2 className="text-2xl font-serif font-semibold mb-8 text-center">Servizi Disponibili</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="border-none shadow-md">
                 <CardContent className="pt-6">
                   <h3 className="text-xl font-medium mb-3">Assistenza Continua</h3>
                   <p className="text-gray-600 mb-4">
-                    Il nostro personale è presente 24 ore su 24 per offrire supporto e 
+                    Il nostro personale è presente per offrire supporto e 
                     assistenza alle famiglie durante la permanenza nella casa del commiato.
                   </p>
                 </CardContent>
@@ -129,16 +121,6 @@ const CasaDelCommiato = () => {
                   </p>
                 </CardContent>
               </Card>
-              
-              <Card className="border-none shadow-md">
-                <CardContent className="pt-6">
-                  <h3 className="text-xl font-medium mb-3">Ristorazione</h3>
-                  <p className="text-gray-600 mb-4">
-                    Su richiesta, possiamo organizzare un servizio di catering per offrire 
-                    un piccolo rinfresco ai visitatori durante le ore di visita.
-                  </p>
-                </CardContent>
-              </Card>
             </div>
           </div>
           
@@ -148,23 +130,35 @@ const CasaDelCommiato = () => {
               <div>
                 <h3 className="text-xl font-medium mb-4">Informazioni Pratiche</h3>
                 <ul className="space-y-3 text-gray-600">
-                  <li><strong>Indirizzo:</strong> Via della Serenità 123, Milano</li>
-                  <li><strong>Orari di apertura:</strong> 24 ore su 24, tutti i giorni</li>
-                  <li><strong>Parcheggio:</strong> Ampio parcheggio gratuito disponibile</li>
-                  <li><strong>Accessibilità:</strong> La struttura è completamente accessibile alle persone con disabilità</li>
+                  <li><strong>Indirizzo:</strong> Località Piani di Lanciano, 7, 62025 Pioraco (MC)</li>
+                  <li><strong>Servizio:</strong> Gratuito per i nostri clienti</li>
+                  <li><strong>Orari:</strong> Flessibili secondo le esigenze dei familiari</li>
+                  <li><strong>Accessibilità:</strong> La struttura è accessibile alle persone con disabilità</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-medium mb-4">Prenotazioni</h3>
-                <p className="text-gray-600 mb-4">
-                  Per prenotare l'utilizzo della Casa del Commiato o ricevere maggiori 
-                  informazioni, vi invitiamo a contattarci telefonicamente o tramite il 
-                  modulo di contatto sul nostro sito.
-                </p>
-                <Button asChild className="bg-gray-800 hover:bg-gray-700">
-                  <Link to="/contatti">Contattaci</Link>
-                </Button>
+                <h3 className="text-xl font-medium mb-4">Come Raggiungerci</h3>
+                <div className="h-64 rounded-lg overflow-hidden shadow-lg mb-4">
+                  <Map location="Località Piani di Lanciano, 7, 62025 Pioraco (MC)" />
+                </div>
+                <div className="flex justify-center mt-4">
+                  <Button asChild className="bg-gray-800 hover:bg-gray-700 flex items-center">
+                    <a 
+                      href="https://www.google.com/maps/dir/?api=1&destination=Località+Piani+di+Lanciano+7+Pioraco+MC+Italy" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <Navigation className="h-5 w-5 mr-2" />
+                      Indicazioni Stradali
+                    </a>
+                  </Button>
+                </div>
               </div>
+            </div>
+            <div className="mt-8 text-center">
+              <Button asChild className="bg-gray-800 hover:bg-gray-700">
+                <Link to="/contatti">Contattaci</Link>
+              </Button>
             </div>
           </div>
         </div>
