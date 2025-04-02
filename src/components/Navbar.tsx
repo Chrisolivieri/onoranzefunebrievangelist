@@ -51,7 +51,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-4">
             <div className="flex items-center">
               <Phone className="h-4 w-4 mr-2 text-gray-600" />
-              <span className="text-sm font-medium">338 362 2055 | 346 5114548</span>
+              <span className="text-sm font-medium">338 362 2055 | 346 5145484</span>
             </div>
             <Button size="sm" className="bg-gray-800 hover:bg-gray-700">
               <Link to="/contatti">Assistenza</Link>
@@ -97,12 +97,12 @@ const Navbar = () => {
                         <p className="text-sm text-gray-500">Assistenza 24/7</p>
                         <div>
                           <p className="text-base font-bold">338 362 2055</p>
-                          <p className="text-base font-bold">346 5114548</p>
+                          <p className="text-base font-bold">346 5145484</p>
                         </div>
                       </div>
                     </div>
                     <Button className="w-full bg-gray-800 hover:bg-gray-700">
-                      <a href="tel:+393465114548">Chiama Ora</a>
+                      <a href="tel:+393465145484">Chiama Ora</a>
                     </Button>
                   </div>
                 </div>

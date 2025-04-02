@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronRight, Phone, Clock, MapPin, Users, Heart } from "lucide-react";
+import { ChevronRight, Phone, Clock, MapPin, Users, Heart, Home } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -25,7 +25,7 @@ const Index = () => {
             muted
             playsInline
             className="absolute w-full h-full object-cover"
-            style={{ objectPosition: isMobile ? "center" : "center" }}
+            style={{ objectPosition: "center", objectFit: isMobile ? "cover" : "cover" }}
           >
             <source src="/mix.mp4" type="video/mp4" />
             Il tuo browser non supporta i video HTML5.
@@ -58,11 +58,11 @@ const Index = () => {
               <Phone className="mr-3 h-6 w-6" />
               <div>
                 <p className="text-sm text-gray-300">Assistenza 24/7</p>
-                <p className="text-xl font-bold">338 362 2055 | 346 5114548</p>
+                <p className="text-xl font-bold">338 362 2055 | 346 5145484</p>
               </div>
             </div>
             <Button className="bg-white text-gray-800 hover:bg-gray-200">
-              <a href="tel:+393465114548">Chiama Ora</a>
+              <a href="tel:+393465145484">Chiama Ora</a>
             </Button>
           </div>
         </div>
@@ -111,6 +111,45 @@ const Index = () => {
                 <p className="text-gray-600 text-center">
                   Ogni dettaglio è curato con la massima attenzione e rispetto.
                 </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Casa del Commiato Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl font-serif font-semibold mb-4">Casa del Commiato</h2>
+            <p className="text-gray-600 mb-6">
+              La nostra Casa del Commiato è uno spazio accogliente dove potrete dare l'ultimo saluto ai vostri cari in un ambiente intimo e confortevole.
+            </p>
+            <Button variant="outline" asChild className="border-gray-300">
+              <Link to="/casa-del-commiato" className="flex items-center">
+                Visita la Casa del Commiato <ChevronRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+          
+          <div className="flex justify-center">
+            <Card className="border-none shadow-lg overflow-hidden max-w-lg w-full">
+              <AspectRatio ratio={16 / 9}>
+                <img 
+                  src="/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png" 
+                  alt="Casa del Commiato" 
+                  className="w-full h-full object-cover"
+                />
+              </AspectRatio>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-medium mb-2">Un Ambiente Accogliente</h3>
+                <p className="text-gray-600">
+                  La nostra Casa del Commiato a Pioraco offre uno spazio sereno e accogliente per ricordare e onorare i propri cari.
+                </p>
+                <div className="flex items-center mt-4 text-gray-600">
+                  <MapPin className="h-5 w-5 mr-2" />
+                  <span>Località Piani di Lanciano, 7, 62025 Pioraco (MC)</span>
+                </div>
               </CardContent>
             </Card>
           </div>

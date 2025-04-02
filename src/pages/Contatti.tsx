@@ -47,7 +47,7 @@ const Contatti = () => {
                     <div>
                       <h3 className="font-medium text-lg mb-1">Telefono</h3>
                       <p className="text-gray-600">338 362 2055</p>
-                      <p className="text-gray-600">346 5114548</p>
+                      <p className="text-gray-600">346 5145484</p>
                     </div>
                   </div>
                   
@@ -79,10 +79,10 @@ const Contatti = () => {
                   <div className="flex flex-col items-center justify-center space-y-4">
                     <div className="flex items-center">
                       <Phone className="h-5 w-5 mr-3 text-gray-700" />
-                      <span className="text-xl font-medium">346 5114548</span>
+                      <span className="text-xl font-medium">346 5145484</span>
                     </div>
                     <Button className="bg-gray-800 hover:bg-gray-700">
-                      <a href="tel:+393465114548" className="flex items-center">
+                      <a href="tel:+393465145484" className="flex items-center">
                         <Phone className="h-5 w-5 mr-2" />
                         Chiama Ora
                       </a>
