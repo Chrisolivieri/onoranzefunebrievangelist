@@ -13,7 +13,7 @@ const Map: React.FC<MapProps> = ({ location }) => {
       <iframe
         ref={mapRef}
         className="w-full h-full border-0"
-        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${encodeURIComponent(location)}`}
+        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${encodeURIComponent(location)}&zoom=17`}
         allowFullScreen
       ></iframe>
     </div>
