@@ -3,11 +3,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronRight, Phone, Clock, MapPin, Users, Heart, Home } from "lucide-react";
+import { ChevronRight, Phone, Clock, MapPin, Users, Heart, Home, Navigation } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useIsMobile } from "@/hooks/use-mobile";
+import Map from "@/components/Map";
 
 const Index = () => {
   const isMobile = useIsMobile();
@@ -117,7 +118,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Casa del Commiato Section */}
+      {/* Casa del Commiato Section - Moved after About Us section */}
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
@@ -153,11 +154,31 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
+
+          {/* Google Map Section */}
+          <div className="mt-8 mx-auto max-w-lg">
+            <h3 className="text-xl font-medium mb-4 text-center">Come Raggiungerci</h3>
+            <div className="h-64 rounded-lg overflow-hidden shadow-lg">
+              <Map location="Località Piani di Lanciano, 7, 62025 Pioraco (MC)" />
+            </div>
+            <div className="mt-4 flex justify-center">
+              <Button className="bg-gray-800 hover:bg-gray-700 flex items-center" asChild>
+                <a 
+                  href="https://www.google.com/maps/dir/?api=1&destination=Località+Piani+di+Lanciano+7+Pioraco+MC+Italy" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <Navigation className="h-5 w-5 mr-2" />
+                  Indicazioni Stradali
+                </a>
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Contact CTA */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-serif font-semibold mb-6">Siamo Qui Per Aiutarti</h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">

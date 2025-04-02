@@ -2,7 +2,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contatti = () => {
@@ -56,17 +56,6 @@ const Contatti = () => {
                     <div>
                       <h3 className="font-medium text-lg mb-1">Email</h3>
                       <p className="text-gray-600">onoranze.evangelisti@gmail.com</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <Clock className="h-6 w-6 mr-4 mt-1 text-gray-700 flex-shrink-0" />
-                    <div>
-                      <h3 className="font-medium text-lg mb-1">Orari</h3>
-                      <p className="text-gray-600">Lunedì - Venerdì: 08:00 - 20:00</p>
-                      <p className="text-gray-600">Sabato: 09:00 - 18:00</p>
-                      <p className="text-gray-600">Domenica: 10:00 - 16:00</p>
-                      <p className="font-medium mt-2">Servizio di emergenza disponibile 24/7</p>
                     </div>
                   </div>
                 </div>
