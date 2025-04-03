@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState, useRef } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -8,9 +8,12 @@ import { Link } from "react-router-dom";
 import { Navigation } from "lucide-react";
 import Map from "@/components/Map";
 import { useIsMobile } from "@/hooks/use-mobile";
+import VideoModal from "@/components/VideoModal";
 
 const CasaDelCommiato = () => {
   const isMobile = useIsMobile();
+  const [videoModalOpen, setVideoModalOpen] = useState(false);
+  const backgroundVideoRef = useRef<HTMLVideoElement | null>(null);
   
   // All images for gallery
   const galleryImages = [
@@ -37,6 +40,23 @@ const CasaDelCommiato = () => {
     "/lovable-uploads/6cc5fddf-265b-44bb-be90-aa03bd672d18.png",
     "/lovable-uploads/c634aa01-cef8-415f-8ffa-e1d5134571e4.png",
   ];
+
+  const handleVideoClick = () => {
+    // When clicking on the preview video, open modal and pause background video
+    setVideoModalOpen(true);
+    if (backgroundVideoRef.current) {
+      backgroundVideoRef.current.pause();
+    }
+  };
+
+  const handleCloseVideoModal = () => {
+    // When closing the modal, resume background video (muted)
+    setVideoModalOpen(false);
+    if (backgroundVideoRef.current) {
+      backgroundVideoRef.current.play();
+      backgroundVideoRef.current.muted = true;
+    }
+  };
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
@@ -66,9 +86,13 @@ const CasaDelCommiato = () => {
             </div>
             
             <div className="relative h-full">
-              {/* Video in posizione prominente */}
-              <div className="aspect-w-16 aspect-h-9 h-full max-h-96 w-full rounded-lg overflow-hidden shadow-lg">
+              {/* Video in posizione prominente, cliccabile per aprire modal */}
+              <div 
+                onClick={handleVideoClick} 
+                className="aspect-w-16 aspect-h-9 h-full max-h-96 w-full rounded-lg overflow-hidden shadow-lg cursor-pointer relative group"
+              >
                 <video
+                  ref={backgroundVideoRef}
                   autoPlay
                   loop
                   muted
@@ -79,7 +103,11 @@ const CasaDelCommiato = () => {
                   <source src="/mix.mp4" type="video/mp4" />
                   Il tuo browser non supporta i video HTML5.
                 </video>
-                <div className="absolute inset-0 bg-black/20"></div>
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
+                  <div className="w-20 h-20 rounded-full bg-white/80 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-0 h-0 border-t-[10px] border-t-transparent border-l-[20px] border-l-gray-800 border-b-[10px] border-b-transparent ml-2"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -169,6 +197,13 @@ const CasaDelCommiato = () => {
           </div>
         </div>
       </section>
+
+      {/* Video Modal */}
+      <VideoModal 
+        isOpen={videoModalOpen} 
+        onClose={handleCloseVideoModal} 
+        videoSrc="/mix.mp4" 
+      />
 
       <Footer />
     </div>

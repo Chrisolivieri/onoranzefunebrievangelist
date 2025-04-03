@@ -10,11 +10,10 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png" 
+                src="/lovable-uploads/e2982a56-429d-42c0-8906-c0b0e41b2b9b.png" 
                 alt="Evangelisti Logo" 
-                className="h-16 w-auto mr-3"
+                className="h-20 w-auto mr-3"
               />
-              <h3 className="text-xl font-serif font-semibold text-white">Onoranze Funebri Evangelisti</h3>
             </div>
             <p className="mb-4 text-gray-400">
               Offriamo servizi funebri completi con dignità e rispetto, accompagnando le famiglie in ogni fase del lutto con passione.

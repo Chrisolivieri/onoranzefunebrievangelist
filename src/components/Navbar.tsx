@@ -25,13 +25,11 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2">
               <img 
-                src="/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png" 
+                src="/lovable-uploads/e2982a56-429d-42c0-8906-c0b0e41b2b9b.png" 
                 alt="Onoranze Funebri Evangelisti Logo" 
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
-              <span className="text-base md:text-xl font-serif font-bold text-gray-900 truncate max-w-[180px] md:max-w-none">
-                Onoranze Funebri Evangelisti
-              </span>
+              {/* Logo text removed */}
             </Link>
           </div>
 
@@ -71,7 +69,7 @@ const Navbar = () => {
                   <div className="flex items-center justify-between mb-8">
                     <div className="flex items-center gap-2">
                       <img 
-                        src="/lovable-uploads/6741931b-c9e8-43e9-a642-0988a2a5150b.png" 
+                        src="/lovable-uploads/e2982a56-429d-42c0-8906-c0b0e41b2b9b.png" 
                         alt="Evangelisti Logo" 
                         className="h-12 w-auto"
                       />
