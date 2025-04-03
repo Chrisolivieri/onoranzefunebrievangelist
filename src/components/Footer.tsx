@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
@@ -10,7 +9,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="/lovable-uploads/e2982a56-429d-42c0-8906-c0b0e41b2b9b.png" 
+                src="/lovable-uploads/20340507-951d-457e-8460-9976da93b4e6.png" 
                 alt="Evangelisti Logo" 
                 className="h-20 w-auto mr-3"
               />

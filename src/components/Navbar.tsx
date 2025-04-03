@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -25,11 +24,10 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2">
               <img 
-                src="/lovable-uploads/e2982a56-429d-42c0-8906-c0b0e41b2b9b.png" 
+                src="/lovable-uploads/ab31d22f-3754-42ac-b193-5e0890afa5ba.png" 
                 alt="Onoranze Funebri Evangelisti Logo" 
                 className="h-16 w-auto"
               />
-              {/* Logo text removed */}
             </Link>
           </div>
 
@@ -69,11 +67,10 @@ const Navbar = () => {
                   <div className="flex items-center justify-between mb-8">
                     <div className="flex items-center gap-2">
                       <img 
-                        src="/lovable-uploads/e2982a56-429d-42c0-8906-c0b0e41b2b9b.png" 
+                        src="/lovable-uploads/ab31d22f-3754-42ac-b193-5e0890afa5ba.png" 
                         alt="Evangelisti Logo" 
                         className="h-12 w-auto"
                       />
-                      <span className="text-lg font-serif font-bold">Menu</span>
                     </div>
                   </div>
                   <nav className="flex flex-col gap-4">

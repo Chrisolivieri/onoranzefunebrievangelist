@@ -1,4 +1,3 @@
-
 import React, { useState, useRef } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,13 +8,14 @@ import { Navigation } from "lucide-react";
 import Map from "@/components/Map";
 import { useIsMobile } from "@/hooks/use-mobile";
 import VideoModal from "@/components/VideoModal";
+import ImageModal from "@/components/ImageModal";
 
 const CasaDelCommiato = () => {
   const isMobile = useIsMobile();
   const [videoModalOpen, setVideoModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const backgroundVideoRef = useRef<HTMLVideoElement | null>(null);
   
-  // All images for gallery
   const galleryImages = [
     "/lovable-uploads/d88f7f63-0711-49a5-bfa9-4ccbca588d5a.png",
     "/lovable-uploads/3c1d88b1-3537-46ad-ad20-9daa6a951ed2.png",
@@ -42,7 +42,6 @@ const CasaDelCommiato = () => {
   ];
 
   const handleVideoClick = () => {
-    // When clicking on the preview video, open modal and pause background video
     setVideoModalOpen(true);
     if (backgroundVideoRef.current) {
       backgroundVideoRef.current.pause();
@@ -50,7 +49,6 @@ const CasaDelCommiato = () => {
   };
 
   const handleCloseVideoModal = () => {
-    // When closing the modal, resume background video (muted)
     setVideoModalOpen(false);
     if (backgroundVideoRef.current) {
       backgroundVideoRef.current.play();
@@ -58,11 +56,14 @@ const CasaDelCommiato = () => {
     }
   };
 
+  const handleImageClick = (imageSrc: string) => {
+    setSelectedImage(imageSrc);
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
       
-      {/* Header Section */}
       <section className="bg-gray-100 py-12">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl font-serif font-bold mb-4">Casa del Commiato</h1>
@@ -72,7 +73,6 @@ const CasaDelCommiato = () => {
         </div>
       </section>
       
-      {/* Main Content */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
@@ -86,7 +86,6 @@ const CasaDelCommiato = () => {
             </div>
             
             <div className="relative h-full">
-              {/* Video in posizione prominente, cliccabile per aprire modal */}
               <div 
                 onClick={handleVideoClick} 
                 className="aspect-w-16 aspect-h-9 h-full max-h-96 w-full rounded-lg overflow-hidden shadow-lg cursor-pointer relative group"
@@ -117,7 +116,11 @@ const CasaDelCommiato = () => {
             <div className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {galleryImages.map((img, index) => (
-                  <div key={`gallery-${index}`} className="aspect-w-4 aspect-h-3 overflow-hidden rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                  <div 
+                    key={`gallery-${index}`} 
+                    className="aspect-w-4 aspect-h-3 overflow-hidden rounded-lg shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+                    onClick={() => handleImageClick(img)}
+                  >
                     <img 
                       src={img} 
                       alt={`Casa del Commiato ${index + 1}`} 
@@ -132,7 +135,6 @@ const CasaDelCommiato = () => {
             </div>
           </div>
           
-          {/* Services */}
           <div className="mt-16">
             <h2 className="text-2xl font-serif font-semibold mb-8 text-center">Servizi Disponibili</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -158,7 +160,6 @@ const CasaDelCommiato = () => {
             </div>
           </div>
           
-          {/* Information and Contact */}
           <div className="mt-16 bg-gray-50 p-8 rounded-lg">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
@@ -198,11 +199,16 @@ const CasaDelCommiato = () => {
         </div>
       </section>
 
-      {/* Video Modal */}
       <VideoModal 
         isOpen={videoModalOpen} 
         onClose={handleCloseVideoModal} 
         videoSrc="/mix.mp4" 
+      />
+
+      <ImageModal
+        isOpen={!!selectedImage}
+        onClose={() => setSelectedImage(null)}
+        imageSrc={selectedImage || ''}
       />
 
       <Footer />
