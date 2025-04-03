@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -28,6 +29,7 @@ const Navbar = () => {
                 alt="Onoranze Funebri Evangelisti Logo" 
                 className="h-16 w-auto"
               />
+              <span className="text-gray-900 font-serif text-xl tracking-wide">Evangelisti</span>
             </Link>
           </div>
 
@@ -71,6 +73,7 @@ const Navbar = () => {
                         alt="Evangelisti Logo" 
                         className="h-12 w-auto"
                       />
+                      <span className="text-gray-900 font-serif text-lg tracking-wide">Evangelisti</span>
                     </div>
                   </div>
                   <nav className="flex flex-col gap-4">
