@@ -11,6 +11,8 @@ import ChiSiamo from "./pages/ChiSiamo";
 import Servizi from "./pages/Servizi";
 import Contatti from "./pages/Contatti";
 import CasaDelCommiato from "./pages/CasaDelCommiato";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CookiePolicy from "./pages/CookiePolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/servizi" element={<Servizi />} />
           <Route path="/contatti" element={<Contatti />} />
           <Route path="/casa-del-commiato" element={<CasaDelCommiato />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

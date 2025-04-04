@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -38,7 +39,8 @@ const CookieConsent = () => {
             <p className="text-gray-600 text-sm">
               Questo sito utilizza cookie tecnici e di profilazione per migliorare la tua esperienza di navigazione. 
               Puoi accettare tutti i cookie o scegliere quali attivare. Per maggiori informazioni, consulta la nostra 
-              <a href="/privacy-policy" className="text-gray-700 underline ml-1">Privacy Policy</a>.
+              <Link to="/privacy-policy" className="text-gray-700 underline ml-1">Privacy Policy</Link> e la 
+              <Link to="/cookie-policy" className="text-gray-700 underline ml-1">Cookie Policy</Link>.
             </p>
           </div>
           <div className="flex flex-wrap gap-2 mt-2 md:mt-0">
