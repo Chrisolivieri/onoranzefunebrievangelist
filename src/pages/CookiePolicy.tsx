@@ -96,18 +96,6 @@ const CookiePolicy = () => {
             </p>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-medium mb-4">Contattaci</h2>
-            <p className="mb-4">
-              Se hai domande sulla nostra politica sui cookie, non esitare a contattarci:
-            </p>
-            <p className="mb-4">
-              <strong>Email:</strong> info@evangelisti.it<br />
-              <strong>Telefono:</strong> 338 362 2055<br />
-              <strong>Indirizzo:</strong> Zona Industriale Cluana, Corridonia (MC)
-            </p>
-          </section>
-
           <p className="text-sm text-gray-600 mt-10">Ultimo aggiornamento: 04 Aprile 2025</p>
         </div>
       </main>

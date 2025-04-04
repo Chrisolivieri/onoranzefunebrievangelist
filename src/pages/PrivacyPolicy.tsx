@@ -87,19 +87,6 @@ const PrivacyPolicy = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-medium mb-4">Contattaci</h2>
-            <p className="mb-4">
-              Per qualsiasi domanda sulla presente Informativa sulla Privacy o per esercitare i tuoi diritti, 
-              puoi contattarci ai seguenti recapiti:
-            </p>
-            <p className="mb-4">
-              <strong>Email:</strong> info@evangelisti.it<br />
-              <strong>Telefono:</strong> 338 362 2055<br />
-              <strong>Indirizzo:</strong> Zona Industriale Cluana, Corridonia (MC)
-            </p>
-          </section>
-
-          <section className="mb-8">
             <h2 className="text-2xl font-medium mb-4">Modifiche alla Privacy Policy</h2>
             <p className="mb-4">
               Possiamo aggiornare periodicamente la nostra Informativa sulla Privacy. Ti invitiamo a rivedere 
