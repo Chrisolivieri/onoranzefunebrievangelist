@@ -56,7 +56,7 @@ const ChiSiamo = () => {
                 </p>
 
                 <p>
-                  La nostra sede principale si trova a Castelraimondo, ma operiamo in tutta la provincia di Macerata per essere 
+                  La nostra sede principale si trova a Castelraimondo, ma operiamo in tutta la provincia di Macerata e su tutto il territorio nazionale per essere 
                   vicini alle famiglie ovunque si trovino.
                 </p>
               </div>

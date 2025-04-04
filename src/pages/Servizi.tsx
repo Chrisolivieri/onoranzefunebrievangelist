@@ -28,7 +28,7 @@ const Servizi = () => {
     {
       icon: <Cross className="h-10 w-10 text-gray-700" />,
       title: "Servizi Funebri Completi",
-      description: "Offriamo servizi funebri completi che includono la preparazione del defunto, l'allestimento della camera ardente, il trasporto funebre, e la coordinazione di tutti gli aspetti della cerimonia secondo le vostre esigenze."
+      description: "Offriamo servizi funebri completi che includono la preparazione del defunto, l'allestimento della camera ardente, il trasporto funebre, e il coordinamento di tutti gli aspetti della cerimonia secondo le vostre esigenze."
     },
     {
       icon: <Users className="h-10 w-10 text-gray-700" />,
