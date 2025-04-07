@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { Cross, Users, Flag, Book, MessageCircleHeart, Clock, MapPin, Heart } from "lucide-react";
+import { Cross, Flag, Book, MessageCircleHeart, Clock, MapPin, Heart } from "lucide-react";
 
 const ServiceCard = ({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) => {
   return (
@@ -28,12 +28,7 @@ const Servizi = () => {
     {
       icon: <Cross className="h-10 w-10 text-gray-700" />,
       title: "Servizi Funebri Completi",
-      description: "Offriamo servizi funebri completi che includono la preparazione del defunto, l'allestimento della camera ardente, il trasporto funebre, e il coordinamento di tutti gli aspetti della cerimonia secondo le vostre esigenze."
-    },
-    {
-      icon: <Users className="h-10 w-10 text-gray-700" />,
-      title: "Consulenza per il Lutto",
-      description: "Il nostro team di professionisti offre supporto psicologico e consulenza durante il periodo di lutto, aiutando le famiglie ad affrontare questo momento difficile con comprensione e sensibilità."
+      description: "Offriamo servizi funebri completi che includono la preparazione del defunto, l'allestimento della camera ardente, il trasporto funebre e il coordinamento di tutti gli aspetti della cerimonia secondo le vostre esigenze."
     },
     {
       icon: <Flag className="h-10 w-10 text-gray-700" />,

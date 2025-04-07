@@ -2,13 +2,13 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronRight, Cross, Users, Flag, Home } from "lucide-react";
+import { ChevronRight, Cross, Home } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
     {
       title: "Servizi Funebri Completi",
-      description: "Organizziamo cerimonie funebri complete, curando ogni dettaglio secondo le vostre esigenze e desideri.",
+      description: "Offriamo servizi funebri completi che includono la preparazione del defunto, l'allestimento della camera ardente, il trasporto funebre e il coordinamento di tutti gli aspetti della cerimonia secondo le vostre esigenze.",
       icon: <Cross className="h-10 w-10 mb-4 text-gray-700" />,
       link: "/servizi/funebri"
     },
@@ -17,12 +17,6 @@ const ServicesSection = () => {
       description: "Un luogo sereno e accogliente dove riunirsi per dare l'ultimo saluto ai propri cari in un ambiente confortevole e rispettoso.",
       icon: <Home className="h-10 w-10 mb-4 text-gray-700" />,
       link: "/casa-del-commiato"
-    },
-    {
-      title: "Consulenza per il Lutto",
-      description: "Supporto psicologico professionale e guida durante il periodo di lutto per aiutarvi ad affrontare questo momento difficile.",
-      icon: <Users className="h-10 w-10 mb-4 text-gray-700" />,
-      link: "/servizi/consulenza"
     }
   ];
 
@@ -37,7 +31,7 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {services.map((service, index) => (
             <Card key={index} className="border-none shadow-md hover:shadow-lg transition-shadow duration-300">
               <CardContent className="pt-6 flex flex-col items-center text-center">
