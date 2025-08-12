@@ -3,9 +3,10 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { Cross, Flag, Book, MessageCircleHeart, Clock, MapPin, Heart, QrCode } from "lucide-react";
+import { Cross, Flag, Book, MessageCircleHeart, Clock, MapPin, Heart } from "lucide-react";
+import qrCodePlaceholder from "@/assets/qr-code-placeholder.png";
 
-const ServiceCard = ({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) => {
+const ServiceCard = ({ icon, title, description, isNew }: { icon: React.ReactNode, title: string, description: string, isNew?: boolean }) => {
   return (
     <Card className="border-none shadow-md hover:shadow-lg transition-shadow duration-300">
       <CardContent className="p-6">
@@ -14,6 +15,11 @@ const ServiceCard = ({ icon, title, description }: { icon: React.ReactNode, titl
             {icon}
           </div>
           <div>
+            {isNew && (
+              <span className="text-xs font-medium text-blue-600 bg-blue-100 px-2 py-1 rounded-full mb-2 inline-block">
+                NOVITÀ
+              </span>
+            )}
             <h3 className="text-xl font-medium mb-2">{title}</h3>
             <p className="text-gray-600">{description}</p>
           </div>
@@ -61,9 +67,10 @@ const Servizi = () => {
       description: "Gestiamo il trasporto del defunto sia a livello nazionale che internazionale, occupandoci di tutte le pratiche burocratiche necessarie per garantire un trasferimento sicuro e rispettoso."
     },
     {
-      icon: <QrCode className="h-10 w-10 text-gray-700" />,
+      icon: <img src={qrCodePlaceholder} alt="QR Code" className="h-10 w-10" />,
       title: "QR Code Watching Stars",
-      description: "Da oggi nella nostra agenzia hai una soluzione unica per ricordare e tramandare la storia di chi non è più tra noi. Con i QR Code di Watching Stars potrai custodire la memoria dei tuoi cari, condividere la loro storia, foto e video, lasciare una dedica, far recapitare un fiore e molto altro ❤ La vera eredità dei nostri cari sono i ricordi che ci lasciano: conservali e tramandali di generazione in generazione. Chiedi maggiori informazioni presso la nostra agenzia."
+      description: "Da oggi nella nostra agenzia hai una soluzione unica per ricordare e tramandare la storia di chi non è più tra noi. Con i QR Code di Watching Stars potrai custodire la memoria dei tuoi cari, condividere la loro storia, foto e video, lasciare una dedica, far recapitare un fiore e molto altro. La vera eredità dei nostri cari sono i ricordi che ci lasciano: conservali e tramandali di generazione in generazione. Chiedi maggiori informazioni presso la nostra agenzia.",
+      isNew: true
     }
   ];
 
@@ -91,6 +98,7 @@ const Servizi = () => {
                 icon={service.icon}
                 title={service.title}
                 description={service.description}
+                isNew={service.isNew}
               />
             ))}
           </div>
