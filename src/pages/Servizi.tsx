@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { Cross, Flag, Book, MessageCircleHeart, Clock, MapPin, Heart } from "lucide-react";
+import { Cross, Flag, Book, MessageCircleHeart, Clock, MapPin, Heart, QrCode } from "lucide-react";
 
 const ServiceCard = ({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) => {
   return (
@@ -59,6 +59,11 @@ const Servizi = () => {
       icon: <MapPin className="h-10 w-10 text-gray-700" />,
       title: "Trasporto Nazionale e Internazionale",
       description: "Gestiamo il trasporto del defunto sia a livello nazionale che internazionale, occupandoci di tutte le pratiche burocratiche necessarie per garantire un trasferimento sicuro e rispettoso."
+    },
+    {
+      icon: <QrCode className="h-10 w-10 text-gray-700" />,
+      title: "QR Code Watching Stars",
+      description: "Da oggi nella nostra agenzia hai una soluzione unica per ricordare e tramandare la storia di chi non è più tra noi. Con i QR Code di Watching Stars potrai custodire la memoria dei tuoi cari, condividere la loro storia, foto e video, lasciare una dedica, far recapitare un fiore e molto altro ❤ La vera eredità dei nostri cari sono i ricordi che ci lasciano: conservali e tramandali di generazione in generazione. Chiedi maggiori informazioni presso la nostra agenzia."
     }
   ];
 
