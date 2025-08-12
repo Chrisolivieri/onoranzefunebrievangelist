@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Cross, Flag, Book, MessageCircleHeart, Clock, MapPin, Heart } from "lucide-react";
-import qrCodePlaceholder from "@/assets/qr-code-placeholder.png";
+import qrCodePlaceholder from "@/assets/qr-code-clear.png";
 
 const ServiceCard = ({ icon, title, description, isNew }: { icon: React.ReactNode, title: string, description: string, isNew?: boolean }) => {
   return (
